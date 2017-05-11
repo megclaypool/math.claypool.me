@@ -1,0 +1,278 @@
+// Colors
+$background: rgb(128, 128, 128); //gray
+$background-header: rgba(192, 162, 52, 1); //dark gold
+$background-header-pic: #fff; //white
+$background-main: #000;
+$background-nav: #000;
+$border-nav: #e5e5e5;
+$link: rgb(113, 153, 187);
+$link-visited: rgb(155, 115, 192);
+$shadow: #242424; //dark gray
+$text-main: #fff;
+$text-nav: #fff;
+$text-title: #fff;
+$title-shadow: #000;
+
+// Layout sizes
+$border-radius: 10px;
+$content-min-width: 400px;
+$gutter: 20px;
+$header-height: 150px;
+$navbar-full-width: 200px;
+$navbar-min-width: 40px;
+
+/* Border class for troubleshooting layouts */
+.border {
+  border: 2px dashed purple;
+}
+
+
+/* RESPONSIVE NAV LAYOUT */
+body, html {
+  height: 100%;
+}
+
+/* remove outer padding */
+.main .row {
+  margin: 0;
+  padding: 0;
+}
+
+/*Remove rounded corners*/
+
+nav.sidebar.navbar {
+  border-radius: 0;
+}
+
+nav.sidebar, .main {
+  -webkit-transition: margin 200ms ease-out;
+  -moz-transition: margin 200ms ease-out;
+  -o-transition: margin 200ms ease-out;
+  transition: margin 200ms ease-out;
+}
+
+/* Add gap to nav and right windows.*/
+.main {
+  padding: 10px 10px 0 10px;
+}
+
+/* .....NavBar: Icon only with coloring/layout.....*/
+
+/* medium size display */
+@media (min-width: 768px) {
+
+  /* Allow main to be next to Nav */
+  .main {
+    position: absolute;
+    width: calc(100% - 40px); /*keeps 100% minus nav size*/
+    margin-left: 40px;
+    float: right;
+  }
+
+  /* lets nav bar to be showed on mouseover */
+  nav.sidebar:hover + .main {
+    margin-left: 200px;
+  }
+
+  /* Center Brand */
+  nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 0;
+  }
+
+  /* Center Brand */
+  nav.sidebar .navbar-brand, nav.sidebar .navbar-header {
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* Center Icons */
+  nav.sidebar a {
+    padding-right: 13px;
+  }
+
+  /* adds border top to first nav box */
+  nav.sidebar .navbar-nav > li:first-child {
+    border-top: 1px #e5e5e5 solid;
+  }
+
+  /* adds border to bottom nav boxes */
+  nav.sidebar .navbar-nav > li {
+    border-bottom: 1px #e5e5e5 solid;
+  }
+
+  /* Colors/style dropdown box */
+  nav.sidebar .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  /* allows nav box to use 100% width */
+  nav.sidebar .navbar-collapse, nav.sidebar .container-fluid {
+    padding: 0;
+  }
+
+  /* colors dropdown box text */
+  .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    color: #777;
+  }
+
+  /* gives sidebar width/height */
+  nav.sidebar {
+    width: 200px;
+    height: 100%;
+    margin-left: -160px;
+    float: left;
+    z-index: 8000;
+    margin-bottom: 0;
+  }
+
+  /* give sidebar 100% width; */
+  nav.sidebar li {
+    width: 100%;
+  }
+
+  /* Move nav to full on mouse over*/
+  nav.sidebar:hover {
+    margin-left: 0;
+  }
+  /* for hiden things when navbar hidden */
+  .forAnimate {
+    opacity: 0;
+  }
+}
+
+/* .....NavBar: Fully showing nav bar..... */
+
+@media (min-width: 1330px) {
+
+  /*Allow main to be next to Nav*/
+  .main {
+    width: calc(100% - 200px); /*keeps 100% minus nav size*/
+    margin-left: 200px;
+  }
+
+  /* Show all nav */
+  nav.sidebar{
+    margin-left: 0;
+    float: left;
+  }
+
+  /* Show hidden items on nav */
+  nav.sidebar .forAnimate {
+    opacity: 1;
+  }
+}
+
+nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
+  color: #CCC;
+  background-color: transparent;
+}
+
+nav:hover .forAnimate {
+  opacity: 1;
+}
+
+section {
+  padding-left: 15px;
+}
+
+
+
+/* General appearance formatting */
+a {
+  color: $link;
+
+  &:visited {
+    color: $link-visited;
+  }
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $background;
+  font-family: 'Gill Sans', 'GillSans', 'Verdana', sans-serif;
+  font-size: 90%;
+  line-height: 1.5;
+}
+
+html {
+  font-size: 16px;
+}
+
+section {
+  box-sizing: border-box;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Concept Formatting */
+.concept-name {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  padding: 0 0 5px;
+}
+
+.concept-content {
+  box-sizing: border-box;
+  margin-left: 10px;
+}
+
+.concept-content-container {
+  box-sizing: border-box;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+
+/* Font formatting */
+.centered {
+  text-align: center;
+}
+
+.description {
+  padding-left: 25px;
+  margin-bottom: 8px;
+}
+
+.large {
+  font-size: large;
+  font-weight: bold;
+}
+
+.script {
+  font-family: 'Merienda', cursive;
+}
+
+.small {
+  font-size: .8em;
+}
+
+.xlarge {
+  font-size: x-large;
+}
+
+.xxlarge {
+  font-size: xx-large;
+}
+
+.underline {
+  text-decoration: underline;
+}

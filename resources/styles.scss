@@ -1,0 +1,185 @@
+// Colors
+$background: rgb(128, 128, 128); //gray
+$background-header: rgba(192, 162, 52, 1); //dark gold
+$background-header-pic: #fff; //white
+$background-main: #000;
+$background-nav: #000;
+$link: rgb(113, 153, 187);
+$link-visited: rgb(155, 115, 192);
+$shadow: #242424; //dark gray
+$text-main: #fff;
+$text-nav: #fff;
+$text-title: #fff;
+$title-shadow: #000;
+
+// Layout sizes
+$content-min-width: 400px;
+$gutter: 20px;
+$left-column: 200px;
+$header-height: 150px;
+
+/* Border class for troubleshooting layouts */
+.border {
+  border: 2px dashed purple;
+}
+
+
+/* Layout formatting */
+#content-height {
+  left: $gutter;
+  margin-bottom: $gutter;
+  position: absolute;
+  top: calc(2 * #{$gutter} + #{$header-height});
+  width: calc(100% - (2 * #{$gutter}));
+}
+
+#headerpic {
+  background-color: $background-header-pic;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px $shadow;
+  box-sizing: border-box;
+  height: $header-height;
+  left: $gutter;
+  position: absolute;
+  top: $gutter;
+  width: $left-column;
+}
+
+#headertitle {
+  background-color: $background-header;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px $shadow;
+  box-sizing: border-box;
+  height: $header-height;
+  left: calc(2 * #{$gutter} + #{$left-column});
+  line-height: 1.2;
+  min-width: $content-min-width;
+  position: absolute;
+  top: $gutter;
+  width: calc(100% - (3 * #{$gutter} + #{$left-column}));
+}
+
+#logo {
+  left: 50%;
+  max-height: calc(#{$header-height} - 10px);
+  max-width: calc(#{$left-column} - 10px);
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#main {
+  background-color: $background-main;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px $shadow;
+  box-sizing: border-box;
+  color: $text-main;
+  height: 100%;
+  left: calc(#{$gutter} + #{$left-column});
+  margin-bottom: $gutter;
+  min-height: 700px;
+  min-width: $content-min-width;
+  overflow: auto;
+  padding: $gutter;
+  position: absolute;
+  text-align: left;
+  top: 0;
+  width: calc(100% - (#{$gutter} + #{$left-column}));
+}
+
+#navbar {
+  background-color: $background-nav;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px $shadow;
+  box-sizing: border-box;
+  color: $text-nav;
+  font-size: .8em;
+  line-height: 1.5;
+  padding: 10px;
+  width: $left-column;
+}
+
+#titletext {
+  color: $text-title;
+  font-size: 2.5em;
+  font-style: normal;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  text-shadow: 2px 2px 2px $title-shadow;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* General appearance formatting */
+a {
+  color: $link;
+
+  &:visited {
+    color: $link-visited;
+  }
+}
+
+body {
+  background-color: $background;
+  font-family: 'Gill Sans', 'GillSans', 'Verdana', sans-serif;
+  font-size: 90%;
+  line-height: 1.5;
+}
+
+section {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Concept Formatting */
+.concept-name {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  padding: 0 0 5px;
+}
+
+.concept-content {
+  margin-left: 10px;
+}
+
+.concept-content-container {
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+
+/* Font formatting */
+.centered {
+  text-align: center;
+}
+
+.large {
+  font-size: large;
+  font-weight: bold;
+}
+
+.script {
+  font-family: 'Merienda', cursive;
+}
+
+.small {
+  font-size: .8em;
+}
+
+.xlarge {
+  font-size: x-large;
+}
+
+.xxlarge {
+  font-size: xx-large;
+}
+
+.underline {
+  text-decoration: underline;
+}
