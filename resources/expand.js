@@ -12,7 +12,7 @@ $(document).ready(function() {
 						$(this).closest('.concept').removeClass('open');
 
 						}else{
-								var newHeight =$(this).closest('.concept').find('.concept-content').height() +'px';
+								var newHeight =$(this).closest('.concept').find('.concept-content').height() + 20 +'px';
 								$(this).closest('.concept').find('.concept-content-container').animate({'height':newHeight},500);
 								$(this).closest('.concept').addClass('open');
 						}
