@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	console.log("the script is loading")
+	console.log("the expand script has loaded")
 });
 
 

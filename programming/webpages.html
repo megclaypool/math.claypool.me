@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Web Site Project</title>
+<link rel="icon" href="resources/images/winship_logo.png" type="image/x-icon">
+<link rel="shortcut icon" href="resources/images/winship_logo.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Quintessential|Merienda|Handlee|Courgette|Kaushan+Script|Tangerine:400,700|Dancing+Script:400,700|Cookie" rel="stylesheet" type="text/css">
+<script src="https://www.w3schools.com/lib/w3data.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="/resources/styles.css" type="text/css">
+<script src="/resources/expand.js"></script>
+</head>
+
+<body style="background-color: #c9c9c9; font-size: 1.2em;">
+<h2 class="script centered" style="text-align: center;">Web Site Project</h2>
+<p>In this project you will be creating your own website. Your website can be on any school-appropriate theme (basically, no sex, drugs, violence, or hate). Anything from a site from the point of view of your favorite D&amp;D character to a commercial site for your mom's home business... Your site will be graded using a rubric I <span style="    text-decoration: line-through;">stole</span> adapted from <a href="https://www.nhsdesigns.com/web/projects/archived/a05_create-five-page-website.php">NHS Designs</a>. As long as you satisfy the requirements, the sky is the limit :) </p>
+
+<p>You'll get a chance to see what everyone's been working on at the end of the course :)</p>
+
+<div class="concept_container">
+  <div class="concept">
+    <div class="concept-name large script underline" id="google">
+      <a name="google"></a>How to with Google
+    </div>
+    <div class="concept-content-container">
+      <div class="concept-content">
+        <strike>This method is slightly more complicated to set up but faster to update.</strike> NOTE: Google has discontinued their webhosting as of summer 2016. If you're interested in a good place to practice your html &amp; css skills, I strongly urge you to consider using <a href="https://codepen.io/">CodePen</a>. I'll leave the Google instructions up as a historical record, but be aware that they don't work anymore :(
+        <br>
+        <ol>
+        <li>Go to your google drive, and make a new folder called "website".</li>
+        <li>Select on the folder and click the share button.</li>
+        <li>Click the word "Advanced" at the bottom.</li>
+        <li>Right now, your folder's sharing settings are "Private - only you can access". Click the word "Change".</li>
+        <li>Select "On - SOUTH BAY UNION SCHOOL DISTRICT" and then make sure that at the bottom it says "Access: Anyone can view". If it doesn't say that, click "change" and set the access so anyone can view (but not edit!) that folder. Then click save.</li>
+        <li>You'll pop back to the previous, bigger popup window with a link to your folder already highlighted. <b>Copy that link!</b></li>
+        <li>Open your website folder and click the button to create a new... something. Instead of making a document, click "More".</li>
+        <li>At the bottom of the popup list, select "Connect more apps".</li>
+        <li>Search for and add both CSS Editey and HTML Editey.</li>
+        <li>Great, now click the "New" button and under "More" select HTML Editey.</li>
+        <li>The first time you make a document with Editey, it will need to ask your permission to do its thing. Go ahead and grant permisison. Scroll through to the bottom and click the "agree to terms" box and the "agree to receive their spam" box. (For what it's worth, I signed up a couple of days ago and haven't gotten any spam yet...)</li>
+        <li>Rename your new html document "index.html".</li>
+        <li>Go back to your website folder and make another new item. This time make a CSS Editey document and name it "styles.css"</li>
+        <li>In your html doc, you'll want to link to your stylesheet. The folder link you copied about 10 steps ago will come in handy! Paste that link into your document for a minute. (You'll be deleting it in a minute, but for right now...) It probably looks something like: "https://drive.google.com/folderview?id=<b>0B11JY1LAR36kQlpkd1VvR0VEVHc</b>&usp=sharing". In the &lt;head&gt; of your html file, to link to your stylesheet you'll have &lt;link rel="stylesheet" href="http://googledrive.com/host/<b>the_ID_number_of_your_website_folder</b>/styles.css" type="text.css"&gt;. You get that ID number from the link you just pasted -- it's be string of numbers and letters between id= and &amp;usp=. So in my example, the link url would be http://googledrive.com/host/<b>0B11JY1LAR36kQlpkd1VvR0VEVHc</b>/styles.css</li>
+        <li>The web address of your index.html file is "http://googledrive.com/host/the_ID_number_of_your_website_folder" so for this example, my webpage would be at http://googledrive.com/host/0B11JY1LAR36kQlpkd1VvR0VEVHc</li>
+        <li>Make 4 more html documents (for the other 4 pages of your website).</li>
+        <li>If you were already working on Pydio/Dreamhost/CodePen, you can paste your code into your new html and css documents in your google drive.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="concept_container">
+  <div class="concept">
+    <div class="concept-name large script underline" id="dreamhost">
+      <a name="dreamhost"></a>How to with Dreamhost / Pydio
+    </div>
+    <div class="concept-content-container">
+      <div class="concept-content">
+        This method is slightly easier initially but slooooow to update code
+        <p>You can sign in to the web server at <a href="https://webftp.dreamhost.com/">https://webftp.dreamhost.com/</a>. <br><img src="images/login.png" alt="login screen"><br>For server, type "centurion". You should have received your login and passphrase from me on SchoolWise. Leave port 21 and FTP selected, and click the blue arrow button at the bottom.</p>
+        <img src="images/handsoff.png" alt="Don't mess with anything but your website folder!" width="1000">
+        <p>Double click the "website" folder to open it. (Ignore all that other stuff...)
+        <br>
+        <img src="images/create1.png" alt="Click on Create" width="1000">
+        <br>
+        <img src="images/create2.png" alt="Select a new empty file">
+        <img src="images/create3.png" alt="Title it index.html">
+        <br>
+        Create a file named "index.html" by clicking the "create" button in the upper right, selecting "Alternatively, you can <i>create a new empty file</i>," and then typing "index.html" and finally clicking the blue arrow. Do the same thing to create your stylesheet (call it style.css) and (eventually) the other 4 pages of your website.</p>
+        <img src="images/files.png" alt="Here are a couple of files in your website folder" width="1000">
+        <img src="images/tabs.png" alt="Click the tabs to switch between files" width="1000">
+        <p>You can open your new files by double clicking them. They'll open in tabs, so you can easily switch back and forth between your html and your css (just like on the Code Academy site.)</p>
+        <p>You might want revisit Code Academy to remember how to structure the HTML of your webpages. However, don't just copy and paste their code -- part of the rubric involves not plagiarizing code!</p>
+        <p>You'll want to have consistent navigation between all your pages. You can add the same code to all your pages, or you <i>could</i> explore the joy of <a href="http://www.w3schools.com/asp/asp_incfiles.asp">includes</a>... :)</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="concept_container">
+  <div class="concept">
+    <div class="concept-name large script underline" id="resources">
+      <a name="resources"></a>Resources
+    </div>
+    <div class="concept-content-container">
+      <div class="concept-content">
+        <ul>
+        <li><a href="https://webftp.dreamhost.com/">Online FTP Access</a></li>
+        <li><a href="http://www.w3schools.com/tags/">HTML Quick Reference</a></li>
+        <li><a href="http://www.w3schools.com/cssref/">CSS Quick Reference</a></li>
+        <li><a href="https://validator.w3.org/">W3 Markup Validation Service</a></li>
+        <li><a href="https://jigsaw.w3.org/css-validator/">W3 CSS Validation Service</a></li>
+        <li><a href="http://www.w3schools.com/asp/asp_incfiles.asp">Includes Tutorial</a></li>
+        <li><a href="http://www.w3schools.com/html/">W3 Schools HTML Tutorial</a></li>
+        <li><a href="http://www.w3schools.com/css/">W3 Schools CSS Tutorial</a></li>
+        <li><a href="https://www.codecademy.com/courses/my-first-webpage/0/1">Code Academy: Your first website with CSS</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="concept_container">
+  <div class="concept">
+    <div class="concept-name large script underline" id="student-pages">
+      <a name="student-pages"></a>Student Webpages
+    </div>
+    <div class="concept-content-container">
+      <div class="concept-content">
+        Note that unless you're signed in to your South Bay account, the Google-hosted pages will give a 404 error...
+        <br><a href="http://luis.claypool.me">Luis</a>
+        <br><a href="http://student.claypool.me/lucas">Lucas</a>
+        <br><a href="http://student.claypool.me/tanner">Tanner</a>
+        <br><a href="http://googledrive.com/host/0B8kLugZwqx0rakpOMjFEUEgxWE0">Samy</a>
+        <br><a href="http://googledrive.com/host/0B3hLXCDKSpGkcnhFYk11NGRXRUk">Jacoby</a>
+        <br><a href="http://googledrive.com/host/0BxKWt9hXzESrRDdGWUFaUUJtaGc">Gabriel</a>
+        <br><a href="http://student.claypool.me/schoen">Schoen</a>
+        <br><a href="http://student.claypool.me/akasha">Akasha</a>
+        <br><a href="http://googledrive.com/host/0B4_lp8Gudq_CZ1I4dVpGZHVsbm8">Riley</a>
+        <br><a href="http://googledrive.com/host/0B4Wy9pKmj-YicTRiU21lZlpzcTQ">Ezrah</a>
+        <br><a href="http://googledrive.com/host/0BzBb1wqh2XPyRml2RUlfRmR5YTg">Amanda</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p><Label class="medium script hover"><a href="rubric.pdf">Grading Rubric</a></label>
+<br>
+<span class="small">Note that this is a rough draft -- I may be making some changes... Still, this should get you started :)</span></p>
+
+</body>
+</html>
+
+
+
